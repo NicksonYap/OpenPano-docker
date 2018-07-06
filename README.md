@@ -5,7 +5,7 @@ This project only houses a Dockerfile which encapsulates all (or, most of) the d
 
 The Dockerfile extends from a Python image and adds additional dependencies.
 
-It shares an MIT License, like the OpenPano project.
+It shares a MIT License, like the OpenPano project.
 
 ## Usage
 For a more detailed usage, see the [OpenPano](https://github.com/ppwwyyxx/OpenPano) project page.
