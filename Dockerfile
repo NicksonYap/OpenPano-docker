@@ -11,7 +11,8 @@ RUN apt-get install build-essential sed cmake libjpeg-dev libeigen3-dev -y
 RUN mkdir /openpano \
     && git clone https://github.com/ppwwyyxx/OpenPano.git /openpano \
     && cd /openpano \
-    && make -C src
+    && make -C src \
+    && cp /openpano/src/config.cfg /
 
 WORKDIR "/root"
 CMD ["/bin/bash"]
