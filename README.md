@@ -1,4 +1,4 @@
-openpano-docker
+OpenPano-docker
 ===============
 
 This project only houses a Dockerfile which encapsulates all (or, most of) the dependencies to get started with the panoramic image stitching library called [OpenPano](https://github.com/ppwwyyxx/OpenPano).
@@ -14,17 +14,17 @@ In summary, you can quickly get started with the following
 
 Build the docker image
 ```bash
-docker build -t deontaljaard/pano .
+docker build -t nicksonyap/openpano-docker .
 ```
 
 Run it
 ```bash
-docker run -it deontaljaard/pano
+docker run -it nicksonyap/openpano-docker
 ```
 
 You can then play with the openpano lib. Here is a quick example.
 ```bash
-docker exec -it deontaljaard/pano bash
+docker exec -it nicksonyap/openpano-docker bash
 cd /openpano/src
 python2 run_test.py
 ``` 
