@@ -26,10 +26,15 @@ You can then play with the openpano lib. Here is a quick example.
 ```bash
 docker exec -it nicksonyap/openpano-docker bash
 cd /openpano/src
+cd /root/openpano/src
 python2 run_test.py
 ``` 
 
 ```bash
 docker run -it -v ${PWD}/data:/data nicksonyap/openpano-docker
 ```
+
+```bash
+cd /data/example-data/flower && image-stitching 1.jpg 2.jpg 3.jpg 4.jpg
+``` 
 Happy image stitching!
