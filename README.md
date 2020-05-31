@@ -29,4 +29,7 @@ cd /openpano/src
 python2 run_test.py
 ``` 
 
+```bash
+docker run -it -v ${PWD}/data:/data nicksonyap/openpano-docker
+```
 Happy image stitching!

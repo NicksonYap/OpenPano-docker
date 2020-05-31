@@ -12,8 +12,9 @@ RUN mkdir /root/openpano \
     && git clone https://github.com/ppwwyyxx/OpenPano.git /root/openpano \
     && cd /root/openpano \
     && git checkout 81e7d28bc0f13d0511787ce93c76392f8d803305 \
-    && make -C src \
-    && cp /root/openpano/src/config.cfg /
+    && make -C src
+
+# RUN mkdir /data && cp /root/openpano/src/config.cfg /data/config.cfg
 
 WORKDIR "/root"
 CMD ["/bin/bash"]
