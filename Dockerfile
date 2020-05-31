@@ -14,6 +14,8 @@ RUN mkdir /root/openpano \
     && git checkout 81e7d28bc0f13d0511787ce93c76392f8d803305 \
     && make -C src
 
+ENV PATH "$PATH:/root/openpano/src"
+
 # RUN mkdir /data && cp /root/openpano/src/config.cfg /data/config.cfg
 
 WORKDIR "/root"
